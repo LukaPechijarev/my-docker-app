@@ -1,0 +1,9 @@
+version: '3.8'  # Or the latest version supported
+
+services:
+  app:
+    build:
+      context: .  # Use the current directory as the build context
+    ports:
+      - "6000:6000"
+
