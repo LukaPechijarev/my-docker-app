@@ -1,8 +1,7 @@
-# docker-compose.yml
 version: '3'
 services:
   app:
-    build: .
+    image: my-docker-app:latest
     ports:
       - "4500:4500"
 
