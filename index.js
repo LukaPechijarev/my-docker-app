@@ -1,17 +1,11 @@
-// index.js
 const express = require('express');
 const app = express();
-const port = 4500;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
 });
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+app.listen(4500, () => {
+  console.log('Server is running on port 4500');
 });
 
-// Test change
-// Test change
-// Test change
-// Test change
