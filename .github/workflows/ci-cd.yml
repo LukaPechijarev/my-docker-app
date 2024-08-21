@@ -50,7 +50,7 @@ jobs:
       run: docker logs my-docker-app
 
     - name: Wait for application to start
-      run: sleep 90  # Adjust as necessary
+      run: sleep 590  # Adjust as necessary
 
     - name: Test application
       run: |
