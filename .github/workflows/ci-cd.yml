@@ -45,7 +45,7 @@ jobs:
         docker run -d -p 4500:4500 --name my-docker-app ${{ secrets.DOCKER_USERNAME }}/my-docker-app:latest
 
     - name: Wait for application to start
-      run: sleep 30  # Adjust as necessary
+      run: sleep 60  # Adjust as necessary
 
     - name: Test application
       run: |
