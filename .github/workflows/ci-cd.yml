@@ -1,4 +1,4 @@
-# .github/workflows/ci-cd.yml
+
 name: CI/CD Pipeline
 
 on:
@@ -55,7 +55,7 @@ jobs:
         docker run -d --name my-docker-app -p 4500:4500 ${{ secrets.DOCKER_USERNAME }}/my-docker-app:latest
 
     - name: Wait for application to start
-      run: sleep 90  # Adjust sleep time if necessary
+      run: sleep 90
 
     - name: Test application
       run: curl -f http://localhost:4500 || exit 1
